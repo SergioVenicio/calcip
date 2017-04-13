@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-# -*- coding: utf-8 -*-
+# -*- coding: utf8 -*-
+
 ip = input('IP: ').split('.')
 mask = input('Mask: ').split('.')
 
@@ -82,6 +83,5 @@ if(len(ip) == 4 and len(mask) == 4):
     print('Binário da rede: {0}'.format(bin_rede))
     print('Binário do host: {0}'.format(bin_ip))
     print('Binário do brodcast: {0}'.format(bin_broadcast))
-
 else:
-    print('Ip e/ou mascara invalidos!')
+    print('Digite um IP e uma mascara correta')
